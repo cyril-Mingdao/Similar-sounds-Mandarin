@@ -33,9 +33,9 @@
 
 ```powershell
 # 1. 華語音節與例字（需 pypinyin、wordfreq；結果存在 syllables.json，平常不必重跑）
-.venv\Scripts\python "05羅馬字\華語拼讀投影_v1\make_syllables.py" <套件目錄>
+.venv\Scripts\python "05羅馬字\華語拼讀投影_v2\make_syllables.py" <套件目錄>
 # 2. 錄音、檢查例字聲調、台語音、data.js
-.venv\Scripts\python "05羅馬字\華語拼讀投影_v1\build.py"
+.venv\Scripts\python "05羅馬字\華語拼讀投影_v2\build.py"
 ```
 
 例字讀音依 pypinyin（大陸讀音），台灣讀音不同的字（如「微」台灣念 ㄨㄟˊ）由 build.py 以音高檢查聲調，對不上就換下一個例字重錄；實際使用的例字記在 `chars.json`。
@@ -43,7 +43,7 @@
 ## 素材來源
 
 - 華語音檔：Microsoft Edge 語音合成（zh-TW-HsiaoChenNeural，台灣華語）念例字，起音淡入並統一音量
-- 台語音檔（`audio_tw/`）：部分取自教育部《[臺灣台語常用詞辭典](https://sutian.moe.edu.tw/)》同音讀單字詞條的音檔（著作權屬教育部，依[創用CC 姓名標示－禁止改作 3.0 臺灣](https://creativecommons.org/licenses/by-nd/3.0/tw/)授權條款以原檔使用，未經剪輯或改作），其餘由陽明交大台語 TTS（男聲、台北腔）產生
+- 台語音檔（`audio_tw/`）：部分取自教育部《[臺灣台語常用詞辭典](https://sutian.moe.edu.tw/)》同音讀單字詞條的音檔（著作權屬教育部，依[創用CC 姓名標示－禁止改作 3.0 臺灣](https://creativecommons.org/licenses/by-nd/3.0/tw/)授權條款以原檔使用，未經剪輯或改作），其餘由陽明交大台語 TTS（女聲、高雄腔；v2 起由男聲改女聲）產生
 - 注音查詢連結：教育部《重編國語辭典修訂本》
 - 台語羅馬字依教育部《臺灣台語羅馬字拼音方案》
 
