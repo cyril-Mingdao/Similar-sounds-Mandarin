@@ -33,15 +33,15 @@
 
 ```powershell
 # 1. 華語音節與例字（需 pypinyin、wordfreq；結果存在 syllables.json，平常不必重跑）
-.venv\Scripts\python "05羅馬字\華語拼讀投影_v2\make_syllables.py" <套件目錄>
+.venv\Scripts\python "05羅馬字\華語拼讀投影_v4\make_syllables.py" <套件目錄>
 # 2. 錄音、檢查例字聲調、台語音、data.js
-.venv\Scripts\python "05羅馬字\華語拼讀投影_v2\build.py"
+.venv\Scripts\python "05羅馬字\華語拼讀投影_v4\build.py"
 ```
 
 例字讀音依 pypinyin（大陸讀音），台灣讀音不同的字（如「微」台灣念 ㄨㄟˊ）由 build.py 以音高檢查聲調，對不上就換下一個例字重錄；實際使用的例字記在 `chars.json`。
 
 - 例字一律用正體字：簡化字形（坏、挂…）不當例字，「丑、于、云、准」等改用「醜、於、雲、準」（v3）
-- 教師審聽指定的讀音寫在 build.py 的 `FIXED`（v3）：ㄙㄚ 改念「仨」（音同台灣口語的「殺」）；ㄍㄚ（嘎）、ㄘㄤˊ（捉迷藏的藏）因 TTS 單念會念錯，改以同發音人念的「嘎」「倉」用 Praat 重塑成一聲、二聲
+- 教師審聽指定的讀音寫在 build.py 的 `FIXED`（v3）：ㄙㄚ 改念「仨」（音同台灣口語的「殺」）；ㄍㄚ（嘎）、ㄘㄤˊ（捉迷藏的藏）因 TTS 單念會念錯，改以同發音人念的「嘎」「倉」用 Praat 重塑成一聲、二聲；ㄇㄚ 改念「嗎」並重塑成高平（v4）
 
 ## 素材來源
 
